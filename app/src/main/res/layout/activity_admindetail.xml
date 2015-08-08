@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B0E2FF"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="TextView"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="建築物編號："
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/idTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/latEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="緯度"
+                android:inputType="numberDecimal"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/lngEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="經度"
+                android:inputType="numberDecimal"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/buildingEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="建築物名稱"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/contenttextEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="敘述文字"
+                android:inputType="textMultiLine"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/priceEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="價格"
+                android:inputType="number"
+                android:textSize="25sp" />
+            
+            <EditText
+                android:id="@+id/addrEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="住址"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/patternEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="格局"
+                android:textSize="25sp" />
+            
+            <EditText
+                android:id="@+id/footageEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="坪數"
+                android:inputType="numberDecimal"
+                android:textSize="25sp" />
+            
+            <EditText
+                android:id="@+id/ageEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="屋齡"
+                android:inputType="numberDecimal"
+                android:textSize="25sp" />
+            
+            <EditText
+                android:id="@+id/towardEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="朝向"
+                android:textSize="25sp" />
+            
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

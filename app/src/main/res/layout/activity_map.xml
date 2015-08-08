@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    tools:context=".Map" >
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        class="com.google.android.gms.maps.MapFragment" />
+
+    <LinearLayout
+        android:id="@+id/infoLinearLayout"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="centerToCurrentLocation" >
+
+        <TableLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="#97000000"
+            android:padding="7sp" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayout1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/Latitude"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/latitude"
+                    android:textColor="#91c7ff" />
+
+                <TextView
+                    android:id="@+id/showLatitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="  "
+                    android:textColor="#91c7ff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/Longitude"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/longitude"
+                    android:textColor="#91c7ff" />
+
+                <TextView
+                    android:id="@+id/showLongitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" "
+                    android:textColor="#91c7ff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/Accuracy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/degress"
+                    android:textColor="#91c7ff" />
+
+                <TextView
+                    android:id="@+id/showAccuracy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" "
+                    android:textColor="#91c7ff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/provider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/provider"
+                    android:textColor="#91c7ff" />
+
+                <TextView
+                    android:id="@+id/showProvider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" "
+                    android:textColor="#91c7ff" />
+            </LinearLayout>
+        </TableLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+         android:id="@+id/ColorLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/infoLinearLayout"
+        android:layout_alignParentLeft="true" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/camera120" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/noticeImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/infoLinearLayout"
+        android:layout_weight="1"
+        android:src="@drawable/notice"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/MessageShow"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/noticeImage"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/noticeImage"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="  "
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <!--TextView
+        android:id="@+id/textV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ColorLayout"
+        android:layout_alignLeft="@+id/noticeImage"
+        android:layout_marginLeft="31dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textStyle="bold" /-->
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/tutorial1_activity_java_surface_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        opencv:camera_id="any"
+        opencv:show_fps="true" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#B0E2FF"
+        android:gravity="center"
+        android:text="Test"
+        android:textSize="30sp" />
+
+    <ImageButton
+        android:id="@+id/img"
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title"
+        android:background="#FFFFFF"
+        android:src="@drawable/ic_launcher" />
+
+    <Button
+        android:id="@+id/detailBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:layout_alignParentLeft="true"
+        android:text="閰喟敦隞晶" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_marginTop="30dp"
+        android:layout_width="60dp	"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/add"
+         />
+
+    <Button
+        android:id="@+id/button2"
+ 
+        android:layout_marginBottom ="30dp"
+         android:background="@drawable/minus"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+         />
+
+</RelativeLayout>

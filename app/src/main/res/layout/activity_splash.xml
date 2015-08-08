@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+   
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:id="@+id/imaglogo"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#00000000"
+        android:src="@drawable/firsttech" />
+
+    <TextView
+        android:id="@+id/idtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imaglogo"
+        android:layout_centerHorizontal="true"
+        android:text="-房仲應用資訊系統-"
+        android:textColor="#000000"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/buildingnametv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idtv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:text="資管所_多媒體實驗室" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buildingnametv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:text="IM_Multimedia Procession Application Lab" />
+
+</RelativeLayout>

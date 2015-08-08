@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="管理員登入"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#B0E2FF"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/usernameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="帳號"
+        android:textSize="25sp"
+        android:ems="10" >
+
+        
+    </EditText>
+
+    <EditText
+        android:id="@+id/passwordEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="密碼"
+        android:textSize="25sp"
+        android:inputType="textPassword"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="登入" />
+
+    <Button
+        android:id="@+id/prevBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="回上一頁" />
+
+</LinearLayout>

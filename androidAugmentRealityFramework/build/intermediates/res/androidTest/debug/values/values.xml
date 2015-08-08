@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/AndroidCode/HouseSearchApp/androidAugmentRealityFramework/build/intermediates/bundles/debug/res/values/values.xml -->
+    <eat-comment/>
+    <string name="app_name">AugmentedReality</string>
+    <string name="google_places_api_key">AIzaSyC5mTsDhjayzCqXH87ggEYsfswR1cStfX8</string>
+</resources>

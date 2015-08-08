@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">House Search App</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="latitude">Latitude :</string>
+    <string name="longitude">Longitude :</string>
+    <string name="degress">Degress :</string>
+    <string name="provider">Provider :</string>
+    <string name="title_activity_result">Result</string>
+    <string name="gocamera">GO to Camera</string>
+    <string name="goadmin">Administrator Login</string>
+    <string name="addbuilding">Add Building</string>
+    <string name="refresh">Refresh</string>
+	<string name="back">Back</string>
+	<string name="nkfust">NKFUST</string>
+	<string name="loveriver">LoveRiver</string>
+	<string name="ntug">NTUG</string>
+	<string name="createdb">Create DB</string>
+</resources>
